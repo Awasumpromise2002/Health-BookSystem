@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <!-- font-aawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <!-- --------------------beginnin of header--- -->
+
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href=""><i class="fa fa-heartbeat left"><span> Medicare</span></i></a></li>
+            <li class="nav-right"><a href="#home">Home</a></li>
+
+            <li class="topnav-right"><a href="#blogs">Blog</a></li>
+            <li class="topnav-right"><a href="#reviews">Review</a></li>
+            <li class="topnav-right"><a href="#book">Book</a></li>
+            <li class="topnav-right"><a href="#doctors">Doctors</a></li>
+            <li class="topnav-right"><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#services">Services</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+  
+  </nav> 
+
+
+
+    <!-- start of home -->
+    <section class="home" id="home">
+        <div class="image image-home">
+            <img src="World-Patient-Safety-Day.jpg" alt="">
+        </div>
+        <div class="content content-home">
+            <h3>Stay safe, stay Healthy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Ducimus, nam accusamus. Debitis et optio quasi rem maiores tempora earum quod.</p>
+        <a href="#" class="btn"> Contact us <span><i class="fas fa-chevron-right" ></i></span></a>
+        </div>
+    </section>
+    
+     <!--End of  home section -->
+
+     <!-- icon section starts -->
+        <section class="icons-container">
+            <div class="icons">
+                <i class="fas fa-user-md"></i>
+                <h3>140+</h3>
+                <p>doctors at work</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-users"></i>
+                <h3>1040+</h3>
+                <p>Satisfied Patients</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-procedures"></i>
+                <h3>500+</h3>
+                <p>bed facility</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-hospital"></i>
+                <h3>40+</h3>
+                <p>Available Hospitals</p>
+            </div>
+        </section>
+      <!--end icon section starts -->
+
+      <div class="tup">
+        <a href=""><i class="fas fa-chevron-up to-top"></i></a>
+      </div>
+
+      <script>
+        totup=document.querySelector(".to-top");
+        window.addEventListener("scroll", ()=>{
+            if(window.pageYOffset > 30 ){
+                totup.classList.add("active");
+            }else{
+                totup.classList.remove("active");
+            }
+        })
+      </script>
+
+      <!-- services secion starts -->
+        <section class="services" id="services">
+            <h1 class="heading">our <span>services</span></h1>
+
+            <div class="box-container">
+
+                <div class="box services-1">
+                    <i class="fas fa-notes-medical i-1"></i>
+                    <h3>free checkup</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+                <div class="box services-1">
+                    <i class="fas fa-ambulance i-1"></i>
+                    <h3>24/7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+                <div class="box services-1">
+                    <i class="fas fa-user-md i-1"></i>
+                    <h3>Expert doctors</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+                <div class="box services-2">
+                    <i class="fas fa-pills i-1"></i>
+                    <h3>medicines</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+                <div class="box services-2">
+                    <i class="fas fa-procedures i-1"></i>
+                    <h3>bed facility</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+
+                <div class="box services-2">
+                    <i class="fas fa-heartbeat i-1"></i>
+                    <h3>Total care</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="#" class="btn">learn More<span><i class="fas fa-chevron-right"></i></span></a>
+                </div>
+            </div>
+        </section>
+      <!-- services secion ends -->
+
+      <!-- about secion start -->
+     <section class="about" id="about">
+        <h1 class="heading"><span>About</span> us</h1>
+
+        <div class="row">
+            <div class="image img-about">
+                <img src="about.jpg" alt="">
+            </div>
+
+            <div class="content content-about">
+                <h3>Take care of your healthy life</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt non voluptatem commodi eveniet animi perspiciatis ad ab esse soluta. 
+                    Corporis sed ipsum vero, iste voluptas non commodi doloremque voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quibusdam ut eligendi sequi animi quaerat eos a, sapiente error et tempora.</p>
+                    <a href="#" class="btn">learn more<span><i class="fas fa-chevron-right"></i></span></a>
+            </div>
+        </div>
+     </section>
+      <!-- about secion ends -->
+
+       <!-- doctor secion starts-->
+       <section class="doctors" id="doctors">
+        <h1 class="heading">Our <span>doctors</span></h1>
+
+        <div class="box-container">
+
+            <div class="box doctor-1">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert doctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="box doctor-1">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert d0ctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="box doctor-1">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert doctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="box doctor-2">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert doctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="box box doctor-2">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert doctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="box box doctor-2">
+                <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                <h3>john doe</h3>
+                <span>Expert doctor</span>
+
+                <div class="share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+       </section>
+        <!-- doctor secion ends -->
+
+        <!-- starts of appointment booking -->
+        <section class="book" id="book">
+            <h1 class="heading"><span>book</span> now</h1>
+
+            <div class="row">
+                <div class="image">
+                    <img src="b068d8210a360b9ab1de1ac221fff608.png (1)" alt="">
+                </div>
+
+                <form action="" class="book-1">
+                    <h3>Book appointment</h3>
+                    <input type="text"  placeholder="Enter your Name:" class="box">
+                    <input type="number"  placeholder="Enter your Number:" class="box">
+                    <input type="email"  placeholder="Enter your email:" class="box">
+                    <input type="time"   class="box">
+                    <input type="date"  class="box">
+                    <input type="submit"  value="book now" class="btn">
+                </form>
+            </div>
+        </section>
+        <!-- end of appointment booking -->
+
+
+
+        <!-- review section starts -->
+                 <!-- second to the last(vertical line) -->
+<section class="review sec-last" id="reviews">
+    <h1 class="heading">client's <span>review</span></h1>
+  <div class="wraper-last">
+    <div class="center-line">
+      <a href="" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+    </div>
+    <div class="row-la row-1">
+      <section>
+      <i class="icon fas fa-bolt" aria-hidden="true"></i>
+        <div class="details-last">
+          <span class="title-last">Lorem ipsum dolor sit amet.</span>
+          <span>1st Jan 2021</span>
+        </div>
+        <p>Happy i could still this Platform.</p>
+        <div class="bottom">
+            <a href="#">Read more</a>
+            <i>- Hams fritz</i>
+        </div>
+      </section>
+    </div>
+  
+  
+    <div class="row-la row-2">
+      <section>
+      <i class="icon fas fa-star" aria-hidden="true"></i>
+        <div class="details-last">
+          <span class="title-last">Lorem ipsum dolor sit amet.</span>
+          <span>2nd feb 2021</span>
+        </div>
+        <p>Thanks for i could reach out.</p>
+        <div class="bottom">
+            <a href="#">Read more</a>
+            <i>- James Pete</i>
+        </div>
+      </section>
+    </div>
+  
+    <div class="row-la row-1">
+      <section>
+      <i class="icon fas fa-globe" aria-hidden="true"></i>
+        <div class="details-last">
+          <span class="title-last">Lorem ipsum dolor sit amet.</span>
+          <span>13th March 2022</span>
+        </div>
+        <p>Good job.</p>
+        <div class="bottom">
+            <a href="#">Read more</a>
+            <i>- Shila Nice</i>
+        </div>
+      </section>
+    </div>
+  
+    <div class="row-la row-2">
+      <section>
+      <i class="icon fas fa-rocket" aria-hidden="true"></i>
+        <div class="details-last">
+          <span class="title-last">Lorem ipsum dolor sit amet.</span>
+          <span>14th July 2021</span>
+        </div>
+        <p>Such an Amazing Platform.</p>
+        <div class="bottom">
+            <a href="#">Read more</a>
+            <i>- Njeng P.</i>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+        <!-- review section end -->
+
+        <!-- blog section starts -->
+        <section class="blogs" id="blogs">
+            <h1 class="heading">our <span>blogs</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                    </div>
+
+                    <div class="content content-blog">
+                        <div class="icon">
+                            <a href=""><i class="fas fa-calender">1st may,2021</i></a>
+                            <a href=""><i class="fas fa-user">by admin</i></a>
+                        </div>
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn">learn more<span><i class="fas fa-chevron-right"></span></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Experts.png" alt="">
+                    </div>
+
+                    <div class="content content-blog">
+                        <div class="icon">
+                            <a href=""><i class="fas fa-calender">1st may,2021</i></a>
+                            <a href=""><i class="fas fa-user">by admin</i></a>
+                        </div>
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn">learn more<span><i class="fas fa-chevron-right"></span></i></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="0c49085f860988e12ab31c02bc0ff134.jpg" alt="">
+                    </div>
+
+                    <div class="content content-blog">
+                        <div class="icon">
+                            <a href=""><i class="fas fa-calender">1st may,2021</i></a>
+                            <a href=""><i class="fas fa-user">by admin</i></a>
+                        </div>
+                        <h3>blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#" class="btn">learn more<span><i class="fas fa-chevron-right"></span></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- blogs section end -->
+
+        
+        <!-- footer starts-->
+        <section class="footer">
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>home</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>services</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>about</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>doctors</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>>book</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>reviews</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>blog</span> </i></a>
+                </div>
+
+                <div class="box">
+                    <h3>our services</h3>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>dental car</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>massage therapy</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>cardiology</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>diagnosis</span> </i></a>
+                    <a href="#"><i class="fas fa-chevron-right"> <span>ambulance services</span> </i></a>
+                </div>
+
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="#"><i class="fas fa-phone"> <span>+237 123-456-789</span> </i></a>
+                    <a href="#"><i class="fas fa-phone"> <span>+237 123-456-789</span> </i></a>
+                    <a href="#"><i class="fas fa-envelope"> <span>test@gmail.com</span></i></a>
+                    <a href="#"><i class="fas fa-envelope"> <span>test@gmail.com</span></i></a>
+                    <a href="#"><i class="fas fa-map-marker-alt"> <span>buea, south west cameroon</span></i></a>
+                </div>
+
+                <div class="box">
+                    <h3>follow us</h3>
+                    <a href="#"><i class="fab fa-facebook-f "> <span>facebook</span></i></a>
+                    <a href="#"><i class="fab fa-instagram "> <span>instagram</span></i></a>
+                    <a href="#"><i class="fab fa-twitter "> <span>twitter</span></i></a>
+                    <a href="#"><i class="fab fa-linkedin"> <span>linkedin</span></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"> <span>whatsapp</span></i></a>
+                    
+                </div>
+            </div>
+           
+
+            <div class="credit">created by <span>awasum promise</span> | all right reserved</div>
+        </section>
+        <!-- footer  ends-->
+
+
+
+
+   
+<!-- script for nav -->
+<script>
+    function dropdownMenu(){
+        var x = document.getElementById("dropdownClick");
+        if (x.className === "topnav"){
+            x.className += " responsive";
+            // change nav to topnav.responsive
+        }else{
+            x.className = "topnav";
+        }
+    }
+  </script>
+   
+
+    <!-- -----js for scroll reveal -->
+  <script>
+    ScrollReveal({
+    //   reset:true,
+      distance:'60px',
+      duration:2000,
+      delay: 300
+    });
+    ScrollReveal().reveal('.image,.image-home,.services-1,.doctor-1', {delay:300, origin: 'left'});
+    ScrollReveal().reveal('.heading ', {delay:200, origin: 'top'});
+    ScrollReveal().reveal('.book-1,.services-2,.doctor-2 ', {delay:300, origin: 'right'});
+    ScrollReveal().reveal('.content-home,.icons,.content-about', {delay:400, origin: 'top'});
+    ScrollReveal().reveal('.content-blog,.img-about ', {delay:300, origin: 'bottom'});
+  </script>
+</body>
+</html>
